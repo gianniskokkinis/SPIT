@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A2647">
+
+    <Button
+        android:id="@+id/welcome_screen_btn3"
+        android:layout_width="186dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Επόμενο"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/notify_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Η βασική ιδέα του SPIT είναι να ενημερώνεσαι για την εξέλιξη του μαθήματος. Αυτό πως δουλεύει όμως ;"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notify_text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Αρχικά όλοι οι φοιτητές έχουν την ελευθερία να αλλάξουν την κατάσταση του μαθήματος χρησιμοποιώντας τα παρακάτω κουμπιά. Επίσης, μπορούν να ενημερώσουν την κατάσταση του μαθήματος γράφοντας σημαντικές ανακοινώσεις που έκανε ο καθηγητής στο μάθημα, σε ποιο κεφάλαιο βρίσκεται το μάθημα, αν ακυρώθηκε μάθημα κτλπ."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_screen_btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="369dp"
+        android:layout_height="375dp"
+        app:layout_constraintBottom_toTopOf="@+id/notify_text7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notify_text5"
+        app:srcCompat="@drawable/welcome_screen_course_info" />
+
+</android.support.constraint.ConstraintLayout>

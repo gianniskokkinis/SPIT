@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A2647">
+
+    <Button
+        android:id="@+id/welcome_screen_btn2"
+        android:layout_width="186dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Επόμενο"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/notify_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Αρχικά, συγχαρητήρια που κατέβασες την εφαρμογή μας. Να σε ενημερώσουμε σε αυτό το σημείο, ότι το SPIT βρίσκεται ακόμα σε υπό εξέλιξη και ότι αυτή η έκδοση που χρησιμοποιείτε είναι μία δοκιμαστική έκδοση ανοιχτή προς το κοινό (Open Beta). Αυτό το κάναμε με σκοπό να καταλάβουμε τις ανάγκες των φοιτητών, να ακούσουμε τις γνώμες σας και να προσαρμόσουμε το λογισμικό μας στις δικές σας ανάγκες. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notify_text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Λοιπόν πάμε να δούμε πως δουλεύει το SPIT. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_screen_btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="168dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toTopOf="@+id/notify_text6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notify_text5"
+        app:srcCompat="@drawable/welcome_screen_2" />
+
+</android.support.constraint.ConstraintLayout>

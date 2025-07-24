@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleSagement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0A2647">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0A2647">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="410dp"
+                android:layout_height="334dp"
+                android:layout_marginTop="104dp"
+                android:background="#537FE7"
+                android:focusedMonthDateColor="#F5E9CF"
+                android:selectedWeekBackgroundColor="#E96479"
+                android:weekNumberColor="#9F7415"
+                android:weekSeparatorLineColor="#F5E9CF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/scheduletitle"
+                app:layout_constraintBottom_toTopOf="@+id/calendarView"
+                app:layout_constraintEnd_toStartOf="@+id/imageView16"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="165dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="51dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/undraw_schedule_meeting_52nu"
+                app:layout_constraintBottom_toTopOf="@+id/calendarView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/scheduletodayoverviewrectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+            <TextView
+                android:id="@+id/welcomeUserString4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Timeline"
+                android:textColor="#000000"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="@+id/imageView19"
+                app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/schedule_recycler_view"
+                android:layout_width="365dp"
+                android:layout_height="211dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="@+id/imageView19"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeUserString4" />
+
+            <ImageButton
+                android:id="@+id/search_courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="128dp"
+                android:background="#0A2647"
+                android:src="@drawable/homefragmentbox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/course_status_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <ImageButton
+                android:id="@+id/course_status_button"
+                android:layout_width="201dp"
+                android:layout_height="188dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="128dp"
+                android:background="#0A2647"
+                android:src="@drawable/detailscourse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/search_courses"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="118dp"
+                android:layout_height="117dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/baseline_manage_search_24"
+                app:layout_constraintEnd_toEndOf="@+id/search_courses"
+                app:layout_constraintHorizontal_bias="0.451"
+                app:layout_constraintStart_toStartOf="@+id/search_courses"
+                app:layout_constraintTop_toTopOf="@+id/search_courses" />
+
+            <TextView
+                android:id="@+id/welcomeUserString5"
+                android:layout_width="125dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Search"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/search_courses"
+                app:layout_constraintEnd_toEndOf="@+id/search_courses"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="@+id/search_courses"
+                app:layout_constraintTop_toBottomOf="@+id/imageView20"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="125dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_cast_for_education_24"
+                app:layout_constraintEnd_toEndOf="@+id/course_status_button"
+                app:layout_constraintHorizontal_bias="0.539"
+                app:layout_constraintStart_toStartOf="@+id/course_status_button"
+                app:layout_constraintTop_toTopOf="@+id/course_status_button" />
+
+            <TextView
+                android:id="@+id/welcomeUserString6"
+                android:layout_width="125dp"
+                android:layout_height="41dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Status"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/course_status_button"
+                app:layout_constraintEnd_toEndOf="@+id/course_status_button"
+                app:layout_constraintStart_toStartOf="@+id/course_status_button"
+                app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

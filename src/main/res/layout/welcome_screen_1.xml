@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A2647">
+
+    <Button
+        android:id="@+id/welcome_screen_btn"
+        android:layout_width="186dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Επόμενο"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/notify_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Γειά σας και καλωσορίσατε στο Spectate IT ή αλλιώς SPIT. Μία εφαρμογή που σου επιτρέπει να ενημερώνεσαι για την εξέλιξη των μαθημάτων χωρίς να βρίσκεσαι στον χώρο του πανεπιστημίου."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="405dp"
+        android:layout_height="433dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_screen_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notify_text5"
+        app:srcCompat="@drawable/welcome_screen_1" />
+</android.support.constraint.ConstraintLayout>

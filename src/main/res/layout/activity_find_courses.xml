@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A2647"
+    tools:context=".Find_Courses_Activity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/courses"
+            app:layout_constraintBottom_toTopOf="@+id/searchView_Courses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/searchView_Courses"
+            android:layout_width="417dp"
+            android:layout_height="65dp"
+            android:background="#E8DB90"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView_courses_queue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:queryHint="Courses..."/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_courses_queue"
+            android:layout_width="406dp"
+            android:layout_height="596dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView_Courses" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

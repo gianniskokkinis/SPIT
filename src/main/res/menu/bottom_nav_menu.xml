@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+    <item android:title="Personal"
+        android:id="@+id/personal"
+        android:icon="@drawable/baseline_person_24"
+        />
+    <item android:title="Schedule"
+        android:id="@+id/schedule"
+        android:icon="@drawable/baseline_schedule_24"
+        />
+</menu>

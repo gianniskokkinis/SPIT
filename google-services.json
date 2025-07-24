@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "984435694538",
+    "firebase_url": "https://spit-data-base-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "spit-data-base",
+    "storage_bucket": "spit-data-base.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984435694538:android:45bd2110527ef405bc8d33",
+        "android_client_info": {
+          "package_name": "com.belunka.spit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984435694538-e1387atl5v0jnq4v7eludpn19vnro6ku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.belunka.spit",
+            "certificate_hash": "f6e3063eedb72012b5d002a4307d694b369f7888"
+          }
+        },
+        {
+          "client_id": "984435694538-4nerlnhhblhpfkfg9ue6o7nffuqjp5gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFCMittdqPUQ6YSyvcLKkJS5A6PDEM_o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984435694538-4nerlnhhblhpfkfg9ue6o7nffuqjp5gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

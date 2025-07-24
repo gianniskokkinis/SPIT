@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A2647">
+
+    <Button
+        android:id="@+id/welcome_screen_bt6"
+        android:layout_width="186dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Επόμενο"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/notify_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Επίσης, στην καρτέλα “Personal” θα πρέπει να προσθέσεις ή να διαγράψεις μαθήματα από τον κατάλογό σου ώστε να ενημερώνεσαι από την καρτέλα “HOME” για τις εξελίξεις του μαθήματος  χωρίς να χρειαστεί να περιηγηθείς σε όλα τα μαθήματα του τμήματος. 	"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="415dp"
+        android:layout_height="457dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_screen_bt6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notify_text5"
+        app:srcCompat="@drawable/welcome_screen_my_courses" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A2647">
+
+    <Button
+        android:id="@+id/welcome_screen_btn5"
+        android:layout_width="186dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Επόμενο"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/notify_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ωραία μιας και κατάλαβες πως δουλεύει το SPIT, είσαι έτοιμος να το χρησιμοποιήσεις. Όμως κάτι τελευταίο θα θέλαμε από σένα. Εάν διαπιστώσεις οποιοδήποτε πρόβλημα στην εφαρμογή μας, μπορείς να μας στείλεις ένα email ή να αφήσετε μία κριτική στο Google Play Store. Να ξέρετε ότι η γνώμη σας είναι πολύτιμη για εμάς και πόσο μάλλον τώρα που είναι και δοκιμαστική η έκδοση μας. Ελπίζουμε να την απολαύσεις. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="405dp"
+        android:layout_height="402dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_screen_btn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notify_text5"
+        app:srcCompat="@drawable/ready_to_use_screen" />
+
+</android.support.constraint.ConstraintLayout>

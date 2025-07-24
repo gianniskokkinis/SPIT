@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <Button
+        android:id="@+id/course_view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/imageview_course_thunbail"
+        android:backgroundTint="#B99B6B"
+        android:text="VIEW" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/imageview_course_thunbail"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_course_title"
+        android:layout_toEndOf="@id/imageview_course_thunbail"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:text="Course_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/course_time_display"
+        android:layout_toEndOf="@id/imageview_course_thunbail"
+        android:layout_below="@id/name_course_title"
+        android:textColor="@color/white"
+        tools:text="Subject discription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/imageview_course_thunbail"
+        android:layout_marginTop="10dp"
+
+        android:background="#0A2647"
+        />
+
+</RelativeLayout>

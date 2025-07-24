@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slides_nav"
+    app:startDestination="@id/homeSagment">
+
+    <fragment
+        android:id="@+id/homeSagment"
+        android:name="com.belunka.spit.HomeSagment"
+        android:label="fragment_home_sagment"
+        tools:layout="@layout/fragment_home_sagment" />
+    <fragment
+        android:id="@+id/personalSagement"
+        android:name="com.belunka.spit.PersonalSagement"
+        android:label="fragment_personal_sagement"
+        tools:layout="@layout/fragment_personal_sagement" />
+    <fragment
+        android:id="@+id/scheduleSagement"
+        android:name="com.belunka.spit.ScheduleSagement"
+        android:label="fragment_schedule_sagement"
+        tools:layout="@layout/fragment_schedule_sagement" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.belunka.spit.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+</navigation>
